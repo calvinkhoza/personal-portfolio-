@@ -767,7 +767,7 @@ section,
 
 /*--------------------------------------------------------------
 # Portfolio Section
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -876,7 +876,7 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
-}
+}*/
 
 /*--------------------------------------------------------------
 # Services Section

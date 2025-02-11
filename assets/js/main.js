@@ -19,7 +19,8 @@
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
-      if (document.querySelector('.header-show')) {
+      if (document.querySelector('.header-show'))
+     {
         headerToggle();
       }
     });
@@ -262,8 +263,10 @@ function sendMessage() {
         botResponse = "Goodbye! Have a great day!";
       } else if (userInput.includes("thank you") || userInput.includes("thanks")) {
         botResponse = "You're welcome! Let me know if you need anything else.";
+      } else if (userInput.includes("exprience")) {
+        botResponse = "You can navigate to my summary to see my exprience history <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("skills")) {
-        botResponse = "Some of the soft skills I possess are good communication and technical skills. You can navigate to the <a href='#skills'>Skills</a> page for more information.";
+        botResponse = "I posses both soft and technical skills . You can navigate to the <a href='#skills'>Skills</a> page for more information.";
       } else if (userInput.includes("name")) {
         botResponse = "My name is CK, Cavin's assistant. I'm here to help!";
       } else if (userInput.includes("tell me more about the profile")) {
