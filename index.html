@@ -523,17 +523,23 @@
   </div>
 
   <!-- Chatbot Window -->
-  <div id="chatbot">
-    <div id="chatbot-header">
+  <!-- Chatbot Icon -->
+<div id="chatbot-toggle" onclick="toggleChatbot()">
+  💬 <!-- Updated chat bubble icon -->
+</div>
+
+<!-- Chatbot Container -->
+<div id="chatbot"> 
+  <div id="chatbot-header">
       I'm CK, Chat with me!
-      <button id="chatbot-close-btn" onclick="closechat()">X</button>
-    </div>
-    <div id="chatbot-body"></div>
-    <div id="chatbot-footer">
+      <button id="chatbot-close-btn" onclick="closechat()">&times;</button>
+  </div>
+  <div id="chatbot-body"></div>
+  <div id="chatbot-footer">
       <input type="text" id="user-input" placeholder="Type a message..." />
       <button id="send-button" onclick="sendMessage()">Send</button>
-    </div>
   </div>
+</div>
 
 
   <footer id="footer" class="footer position-relative light-background">
