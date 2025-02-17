@@ -54,12 +54,15 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about" ><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-pc-display icon"></i>  Skills </a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume </a></li>
-        <li><a href="#projects"><i class="bi bi-kanban icon"></i>  Projects </a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact </a></li>
+        <ul>
+          <li><a href="#hero" class="active" aria-label="Go to Home"><i class="bi bi-house navicon" style="margin-right: 8px;"></i>Home</a></li>
+          <li><a href="#about" aria-label="Learn more about me"><i class="bi bi-person navicon" style="margin-right: 8px;"></i> About</a></li>
+          <li><a href="#skills" aria-label="View my skills"><i class="bi bi-pc-display icon" style="margin-right: 8px;"></i> Skills</a></li>
+          <li><a href="#resume" aria-label="Read my resume"><i class="bi bi-file-earmark-text navicon" style="margin-right: 8px;"></i> Resume</a></li>
+          <li><a href="#certificates" aria-label="See my certificates"><i class="bi bi-kanban icon" style="margin-right: 8px;"></i> certificates</a></li>
+          <li><a href="#contact" aria-label="Get in touch"><i class="bi bi-envelope navicon" style="margin-right: 8px;"></i> Contact</a></li>
+      </ul>
+      
        
       </ul>
     </nav>
@@ -323,27 +326,87 @@
       <a href="assets/CAVIN_CV.pdf" download class="btn btn-primary">Download CV</a>
 
     </div>
-    <main class="Projects-main">
-      <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">
-        My Projects
-      </h1>
-      <div class="Project-container">
-        <!--Project 1-->
-        <img src="assets/img/Capture.PNG" height="450" width="500" alt="Weather" />
-        <div class="project-details">
-          <h2>Weather App</h2>
-        </div>
+    <main class="certificates-main">
+      <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Certificates</h1>
+     
+      <div class="certificates-container">
+         
+           <!-- Certificate 1 -->
+           <div class="certificate" data-aos="fade-right" data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
+              
+               <div class="certificate-details">
+                   <h2>Introduction to DevOps</h2>
+                   <p>IBM</p>
+                   <p><strong>Issued:</strong> 2025</p>
+                   <a href="https://coursera.org/share/1f7ad599da426f1c7dcd11a377d0380d" class="btn">View Certificate</a>
+               </div>
+           </div>
 
+           <!-- Certificate 2 -->
+           <div class="certificate" data-aos="fade-left" data-aos-offset="500"
+           data-aos-duration="500">
+               
+               <div class="certificate-details">
+                   <h2>Introduction to Artificial Intelligence</h2>
+                   <p>IBM</p>
+                   <p><strong>Issued:</strong> 2025</p>
+                   <a href="https://coursera.org/share/575e3ee8cd972cfa23788269f17c316e" class="btn">View Certificate</a>
+               </div>
+           </div>
 
+           <!-- Certificate 3 -->
+           <div class="certificate" data-aos="fade-right" data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
+              
+               <div class="certificate-details">
+                   <h2> Countinous Delivery and DevOps</h2>
+                   <p> University of Virginia</p>
+                   <p><strong>Issued:</strong> 2025</p>
+                   <a href="https://coursera.org/share/cd8d46eb524255fdb2970104f9be3e79" class="btn">View Certificate</a>
+               </div>
+           </div>
 
+           <!-- Certificate 4 -->
+           <div class="certificate" data-aos="fade-left" data-aos-offset="500"
+           data-aos-duration="500">
+              
+               <div class="certificate-details">
+                   <h2>Cloud Native, DevOps, Agile and NoSql</h2>
+                   <p>Corsera</p>
+                   <p><strong>Issued:</strong> 2025</p>
+                   <a href="https://coursera.org/share/1737fb50bc03cce02e1cc34c95ff2e72" class="btn">View Certificate</a>
+               </div>
+           </div>
 
+           <!-- Certificate 5 -->
+           <div class="certificate" data-aos="fade-right"  data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
+               
+               
+               <div class="certificate-details">
+                   <h2>Building AI Powered chatbots without Programming</h2>
+                   <p>Corsera</p>
+                   <p><strong>Issued:</strong> 2024</p>
+                   <a href="https://coursera.org/share/e96db0c44159f6394e63acce9838ad4e" class="btn">View Certificate</a>
+               </div>
+           </div>
+           <!-- Certificate 6 -->
+           <div class="certificate" data-aos="fade-left" data-aos-offset="500"
+           data-aos-duration="500">
+              
+               <div class="certificate-details">
+                   <h2>Generative AI: Prompt Enginnering Basics</h2>
+                   <p>Corsera</p>
+                   <p><strong>Issued:</strong> 2025</p>
+                   <a href="https://www.coursera.org/account/accomplishments/verify/PR6AES0LFQ0Y" class="btn">View Certificate</a>
+               </div>
+           </div>
+           
+       </div>
+       </div>
+   </main>
 
-
-
-
-
-      </div>
-    </main>
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
