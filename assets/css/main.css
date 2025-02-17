@@ -1046,7 +1046,7 @@ certificate page
 
 .certificate {
   width: 45%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(166, 179, 204, 0.8);
   box-shadow: 0 4px 8px rgba(141, 171, 206, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -1072,19 +1072,19 @@ certificate page
 .certificate-details h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(92, 140, 172);
+  color: rgb(8, 8, 8);
 }
 
 .certificate-details p {
   font-size: 1rem;
-  color: #598fa8;
+  color: #000000;
   margin: 10px 0;
 }
 
 .certificate-details .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: rgb(94, 113, 136);
+  background: rgba(0, 0, 0, 0);
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -1093,7 +1093,7 @@ certificate page
 }
 
 .certificate-details .btn:hover {
-  background: rgb(94, 118, 146);
+  background: rgb(0, 0, 0);
 }
 
 /* Responsive */
