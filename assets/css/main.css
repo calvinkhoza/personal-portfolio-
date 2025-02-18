@@ -409,7 +409,7 @@ h6 {
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
-  position: fixed;
+  position: relative;
   visibility: hidden;
   opacity: 0;
   right: 15px;
@@ -418,7 +418,7 @@ h6 {
   background-color: var(--accent-color);
   width: 44px;
   height: 44px;
-  border-radius: 50px;
+  border-radius: 30px;
   transition: all 0.4s;
 }
 
@@ -429,14 +429,14 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
   color: var(--contrast-color);
 }
 
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -765,60 +765,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.services .service-item {
-  position: relative;
-}
-
-.services .service-item .icon {
-  background: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid var(--accent-color);
-  margin-right: 20px;
-}
-
-.services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .service-item:hover .icon {
-  background: var(--surface-color);
-}
-
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
-}
-
-.services .service-item .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .service-item .title a {
-  color: var(--heading-color);
-}
-
-.services .service-item .title a:hover {
-  color: var(--accent-color);
-}
-
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
-}
-
-
-/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-wrap {
@@ -919,59 +865,72 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-/*--------------------------------------------------------------------------------
-# Chatbot
----------------------------------------------------------------------------------*/
+/* Chatbot Icon */
+#chatbot-toggle {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+#chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Chatbot Window */
 #chatbot {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
+  bottom: 70px;
+  right: 15px;
+  width: 280px;
   height: 400px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   display: none;
   flex-direction: column;
 }
 
 #chatbot-header {
-  background-color: #2c37da; 
-  color: rgb(40, 169, 201);           
+  background-color: #0056b3;
+  color: white;
   padding: 10px;
   text-align: center;
-  font-size: 16px;
-  border-radius: 10px 10px 0 0;  
+  font-size: 14px;
+  border-radius: 10px 10px 0 0;
 }
 
 #chatbot-body {
   flex: 1;
   overflow-y: auto;
-  flex-direction: column;
-  display: flex;
-  padding: 10px;
-  overflow-y: auto;
-  background-color: #f1f1f1;
+  padding: 8px;
+  background-color: #f9f9f9;
 }
 
 #chatbot-footer {
   display: flex;
-  padding: 10px;
-  background-color: #068db6;
+  padding: 8px;
+  background-color: #0056b3;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
 #user-input {
   flex: 1;
-  padding: 5px;
-  border: 1px solid #ccc;
+  padding: 6px;
   border-radius: 5px;
-  font-size: 14px;
+  border: 1px solid #ccc;
+  font-size: 12px;
 }
 
 #send-button {
-  background-color: #13d4c4;
+  background-color: #008060;
   color: white;
   border: none;
   border-radius: 5px;
@@ -980,43 +939,31 @@ section,
 }
 
 #send-button:hover {
-  background-color: #11b5bbee;
+  background-color: #006648;
 }
 
 .message {
-  padding: 10px;              
-  margin: 5px 0;              
-  border-radius: 10px;        
-  font-size: 16px;            
-  max-width: 80%;             
-  word-wrap: break-word;      
+  padding: 6px;
+  margin: 4px 0;
+  border-radius: 6px;
+  font-size: 12px;
+  max-width: 75%;
+  word-wrap: break-word;
 }
 
-
-.message.user-message {
-  background-color: #09d6f1; 
-  border: 2px solid #a3dbcd; 
-  align-self: flex-end;          
+.user-message {
+  background-color: #cce5ff;
+  align-self: flex-end;
 }
 
-
-.message.bot-message {
-  background-color: #0ad4f8; 
-  border: 2px solid #ccc;    
-  align-self: flex-start; 
+.bot-message {
+  background-color: #d4f4dd;
+  align-self: flex-start;
 }
 
-
-#chatbot-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #14a4dd;
-  color: white;
-  border-radius: 50%;
-  padding: 15px;
-  cursor: auto;
-  font-size: 24px;
+.typing-indicator {
+  font-style: italic;
+  color: #666;
 }
 /*
 certificate page 

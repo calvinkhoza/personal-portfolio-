@@ -219,84 +219,89 @@
 })();
 function toggleChatbot() {
   const chatbot = document.getElementById('chatbot');
+  const chatbotBody = document.getElementById('chatbot-body');
   chatbot.style.display = chatbot.style.display === 'flex' ? 'none' : 'flex';
+  if (chatbot.style.display === 'flex') {
+      chatbotBody.innerHTML = ""; // Clear previous messages
+      displayBotMessage("Hello! How can I help you today?");
+  }
 }
 
 function closechat() {
-  const closec = document.getElementById('chatbot');
-  closec.style.display = closec.style.display === 'flex' ? 'none' : 'flex';
+  document.getElementById('chatbot').style.display = 'none';
 }
 
-// Function to send message to chatbot
+function displayBotMessage(message) {
+  const chatbotBody = document.getElementById('chatbot-body');
+  const botMessageDiv = document.createElement('div');
+  botMessageDiv.classList.add('message', 'bot-message');
+  botMessageDiv.innerHTML = message;
+  chatbotBody.appendChild(botMessageDiv);
+  chatbotBody.scrollTop = chatbotBody.scrollHeight;
+}
+
 function sendMessage() {
-  const userInput = document.getElementById('user-input').value.trim().toLowerCase(); 
-  // Check if the user input is not empty
+  const userInput = document.getElementById('user-input').value.trim().toLowerCase();
   if (userInput) {
-    // Display user message
-    const userMessageDiv = document.createElement('div');
-    userMessageDiv.classList.add('message', 'user-message');
-    userMessageDiv.textContent = userInput;
-    document.getElementById('chatbot-body').appendChild(userMessageDiv);
-    
-    // Determine the bot's response based on user input
-    setTimeout(() => {
-      const botMessageDiv = document.createElement('div');
-      botMessageDiv.classList.add('message', 'bot-message');
+      const chatbotBody = document.getElementById('chatbot-body');
+      const userMessageDiv = document.createElement('div');
+      userMessageDiv.classList.add('message', 'user-message');
+      userMessageDiv.textContent = userInput;
+      chatbotBody.appendChild(userMessageDiv);
+      document.getElementById('user-input').value = '';
       
-      let botResponse = "I'm not sure how to respond to that.";
-      // Define responses with links for navigation
+      const typingIndicator = document.createElement('div');
+      typingIndicator.classList.add('typing-indicator');
+      typingIndicator.textContent = "Typing...";
+      chatbotBody.appendChild(typingIndicator);
+      chatbotBody.scrollTop = chatbotBody.scrollHeight;
+      
+      setTimeout(() => {
+          chatbotBody.removeChild(typingIndicator);
+          let response = "I'm not sure how to respond to that.";
+
       if (userInput.includes("hello") || userInput.includes("hi") || userInput.includes("hey")) {
-        botResponse = "Hi there! How can I assist you today?";
-      } else if (userInput.includes("how are you")) {
-        botResponse = "I'm great, thanks for asking! How about you?";
-      } else if (userInput.includes("help")) {
-        botResponse = "I'm here to help! What do you need assistance with?";
+              response = "Hi there! How can I assist you today?";
       } else if (userInput.includes("cv")) {
-        botResponse = "You can download the CV under the <a href='#resume'>Resume</a> section.";
+              response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
+      }else if (userInput.includes("cv")) {
+        response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("bye")) {
-        botResponse = "Goodbye! Have a great day!";
+        response = "Goodbye! Have a great day!";
+      }else if (userInput.includes("certificates")) {
+        response = "You can view my certificates  under the <a href='#certificate'>Certificate </a> section.";
       } else if (userInput.includes("thank you") || userInput.includes("thanks")) {
-        botResponse = "You're welcome! Let me know if you need anything else.";
+        response = "You're welcome! Let me know if you need anything else.";
       } else if (userInput.includes("exprience")) {
-        botResponse = "You can navigate to my summary to see my exprience history <a href='#resume'>Resume</a> section.";
+        response = "You can navigate to my summary to see my exprience history <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("skills")) {
-        botResponse = "I posses both soft and technical skills . You can navigate to the <a href='#skills'>Skills</a> page for more information.";
+        response = "I posses both soft and technical skills . You can navigate to the <a href='#skills'>Skills</a> page for more information.";
       } else if (userInput.includes("name")) {
-        botResponse = "My name is CK, Cavin's assistant. I'm here to help!";
+        response = "My name is CK, Cavin's assistant. I'm here to help!";
       } else if (userInput.includes("tell me more about the profile")) {
         botResponse = "Motivated IT professional with a Diploma in Information Technology, specializing in Software Development. For more information, visit the <a href='#profile'>Profile</a> section.";
       } else if (userInput.includes("links")) {
         botResponse = "Click any icon below my profile picture to get redirected, or visit the <a href='#contact'>Contact</a> section for more details.";
       } else if (userInput.includes("contact")) {
-        botResponse = "To get a hold of Cavin, email him at calvinkhoza1998@gmail.com or visit the <a href='#contact'>Contact</a> page for further information.";
+        response = "To get a hold of Cavin, email him at calvinkhoza1998@gmail.com or visit the <a href='#contact'>Contact</a> page for further information.";
       } else if (userInput.includes("joke")) {
-        botResponse = "Why did the programmer quit their job? Because they didn't get arrays! 😆";
+        response= "Why did the programmer quit their job? Because they didn't get arrays! 😆";
       } else if (userInput.includes("motivation") || userInput.includes("inspire me")) {
-        botResponse = "Nurture Your Mind With Great Thoughts, For You Will Never Go Any Higher Than You Think.";
+        response = "Nurture Your Mind With Great Thoughts, For You Will Never Go Any Higher Than You Think.";
       } else if (userInput.includes("education")) {
-        botResponse = "Cavin studied at the Tshwane University of Technology, Pretoria, South Africa. For more info, check out the <a href='#education'>Education</a> section.";
+        response = "Cavin studied at the Tshwane University of Technology, Pretoria, South Africa. For more info, check out the <a href='#education'>Education</a> section.";
       } else if (userInput.includes("experience")) {
-        botResponse = "Cavin worked at a few companies and did a learnership at Gijima Technologies. For more details, click on the <a href='#resume'>Resume</a> section.";
+        response = "Cavin worked at a few companies and did a learnership at Gijima Technologies. For more details, click on the <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("profile")) {
-        botResponse = "This portfolio showcases Cavin Khoza’s professional profile, skills, education, and work experience. Explore it for more! You can visit the <a href='#profile'>Profile</a> section.";
+        response = "This portfolio showcases Cavin Khoza’s professional profile, skills, education, and work experience. Explore it for more! You can visit the <a href='#profile'>Profile</a> section.";
       }
-
-      // Display the bot response
-      botMessageDiv.innerHTML = botResponse; 
-      document.getElementById('chatbot-body').appendChild(botMessageDiv);
-
-      // Scroll to the bottom of the chat
-      document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
-
-    }, 500); 
-    // Clear the input field after sending the message
-    document.getElementById('user-input').value = '';
+          displayBotMessage(response);
+      }, 1000);
   }
 }
 
-// Event listener to allow "Enter" key to send the message
 document.getElementById('user-input').addEventListener('keypress', function(event) {
   if (event.key === 'Enter') {
-    sendMessage(); 
+      sendMessage();
   }
 });
