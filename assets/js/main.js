@@ -261,9 +261,9 @@ function sendMessage() {
           let response = "I'm not sure how to respond to that.";
 
       if (userInput.includes("hello") || userInput.includes("hi") || userInput.includes("hey")) {
-              response = "Hi there! How can I assist you today?";
+        response = "Hi there! How can I assist you today?";
       } else if (userInput.includes("cv")) {
-              response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
+        response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
       }else if (userInput.includes("cv")) {
         response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("bye")) {
@@ -293,7 +293,7 @@ function sendMessage() {
       } else if (userInput.includes("experience")) {
         response = "Cavin worked at a few companies and did a learnership at Gijima Technologies. For more details, click on the <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("profile")) {
-        response = "This portfolio showcases Cavin Khoza’s professional profile, skills, education, and work experience. Explore it for more! You can visit the <a href='#profile'>Profile</a> section.";
+        response = "This portfolio showcases Cavin Khoza’s professional profile, skills, education, and work experience. Explore it for more! You can visit the <a href='#about'>About</a> section.";
       }
           displayBotMessage(response);
       }, 1000);
