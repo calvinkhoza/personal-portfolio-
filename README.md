@@ -1,7 +1,7 @@
 ## Personal Portfolio
 DEPLOYMENT LINK 
 
-calvinkhoza.github.io/personal-portfolio-/
+https://calvinkhoza.github.io/personal-portfolio-/#hero
 
 Welcome to my personal portfolio! This repository showcases my skills, projects, and experiences as a DevOps engineer and solution architecture ,linux engineer . My goal is to share my journey, demonstrate my abilities, and connect with others in the industry.
 
