@@ -26,7 +26,6 @@
 
   });
 
-  
   //Toggle mobile nav dropdowns
    
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
