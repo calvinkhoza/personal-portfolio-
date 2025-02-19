@@ -262,8 +262,6 @@ function sendMessage() {
         response = "Hi there! How can I assist you today?";
       } else if (userInput.includes("cv")) {
         response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
-      }else if (userInput.includes("cv")) {
-        response = "You can download the CV under the <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("bye")) {
         response = "Goodbye! Have a great day!";
       }else if (userInput.includes("certificates")) {
@@ -273,7 +271,7 @@ function sendMessage() {
       } else if (userInput.includes("exprience")) {
         response = "You can navigate to my summary to see my exprience history <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("skills")) {
-        response = "I posses both soft and technical skills . You can navigate to the <a href='#skills'>Skills</a> page for more information.";
+        response = "I posses both soft and technical skills . You can navigate to the <a href='#skills'>Skills</a> page for more information about my skills .";
       } else if (userInput.includes("name")) {
         response = "My name is CK, Cavin's assistant. I'm here to help!";
       } else if (userInput.includes("tell me more about the profile")) {
@@ -287,7 +285,7 @@ function sendMessage() {
       } else if (userInput.includes("motivation") || userInput.includes("inspire me")) {
         response = "Nurture Your Mind With Great Thoughts, For You Will Never Go Any Higher Than You Think.";
       } else if (userInput.includes("education")) {
-        response = "Cavin studied at the Tshwane University of Technology, Pretoria, South Africa. For more info, check out the <a href='#education'>Education</a> section.";
+        response = "Cavin studied Computer Science at the Tshwane University of Technology, Pretoria, South Africa. For more info, check out the <a href='#resume'>Education</a> section.";
       } else if (userInput.includes("experience")) {
         response = "Cavin worked at a few companies and did a learnership at Gijima Technologies. For more details, click on the <a href='#resume'>Resume</a> section.";
       } else if (userInput.includes("profile")) {
