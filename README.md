@@ -1,37 +1,43 @@
- ## Personal Portfolio
+ # Personal Portfolio
+ 
 DEPLOYMENT LINK 
-
 https://calvinkhoza.github.io/personal-portfolio-/#hero
 
-Welcome to my personal portfolio! This repository showcases my skills, projects, and experiences as a DevOps engineer and solution architecture ,linux engineer . My goal is to share my journey, demonstrate my abilities, and connect with others in the industry.
+# 🌐 DevOps Engineer Portfolio
 
-Table of Contents
-About Me
-Skills
-Projects
-Contact
-About Me
-Hello! I'm Cavin Khoza, a passionate DevOps engineer. With a background in cloud computing and solution architecture , I've developed a strong skill set in containerization and orchestration and deployment. I'm continuously learning and striving to improve my expertise.
+Welcome to my **DevOps Engineer Portfolio**! 🚀 This repository showcases my skills, experience, and expertise in DevOps, cloud computing, CI/CD, and automation.
 
-# Skills
-Technical Skills:
- HTML, CSS, JavaScript, 
- Python, React, etc.
- SQL, Docker, Jenkins 
- AWS and Microsoft azure
- Salesforce.com platform
- kubernetes and terraform
-Soft Skills:
- Communication
- Teamwork
- Problem-Solving
- Time Management, 
+## 📌 About Me
+I am a **DevOps Engineer Intern** passionate about automation, cloud computing, and building scalable infrastructure. My expertise includes **CI/CD pipelines, containerization, Infrastructure as Code (IaC), and cloud technologies**.As a highly motivated and detail-oriented DevOps Engineer Intern, I leverage my passion for cloud computing, automation, and collaboration to drive innovation and efficiency. With a strong foundation in designing, implementing, and maintaining scalable, secure, and efficient infrastructure solutions 
 
-Acknowledgements 
-w3 schools 
-font icons 
-Bootstrap
 
+## 🛠️ Skills & Technologies
+- **HTML**
+- **JavaScript**
+- **CSS**
+### 🏗️ **Cloud & Infrastructure**
+- **Cloud Providers**: AWS | Azure | GCP  
+- **Containerization**: Docker | Kubernetes  
+- **Infrastructure as Code (IaC)**: Terraform | Ansible  
+
+### 🔄 **CI/CD & Automation**
+- **CI/CD Tools**: Jenkins | GitHub Actions | GitLab CI/CD  
+- **Scripting & Automation**: Bash | Python | YAML  
+- **Configuration Management**: Ansible | Chef  
+
+### 📊 **Monitoring & Logging**
+- **Monitoring Tools**: Prometheus | Grafana  
+- **Logging Tools**: ELK Stack (Elasticsearch, Logstash, Kibana)  
+
+###  **Version Control & Collaboration**
+- **Git & Repositories**: GitHub | GitLab  
+- **Agile & DevOps Practices**  
+
+### Acknowledgements 
+- **MDN Web Docs**
+- **GitHub doc**
+- **w3school**
+- **bootstraps**
 
 
 Contact
