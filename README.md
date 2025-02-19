@@ -22,24 +22,7 @@ Soft Skills:
  Teamwork
  Problem-Solving
  Time Management, 
-# Projects
-Below are some of the projects I've worked on:
 
-weather App
-
-Description: [Briefly describe the project]
-Technologies Used: [List the technologies or tools you used]
-[Link to the project or GitHub repository]
-[Project Name 2]
-
-Description: [Briefly describe the project]
-Technologies Used: [List the technologies or tools you used]
-[Link to the project or GitHub repository]
-[Project Name 3]
-
-Description: [Briefly describe the project]
-Technologies Used: [List the technologies or tools you used]
-[Link to the project or GitHub repository]
 Contact
 Feel free to reach out to me if you'd like to collaborate or have any questions:
 
