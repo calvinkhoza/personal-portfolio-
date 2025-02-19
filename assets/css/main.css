@@ -941,9 +941,9 @@ section,
   font-style: italic;
   color: #666;
 }
-/*
+/*-----------------------------------------------------
 certificate page 
-*/
+-------------------------------------------------------*/
 
 .certificates-main {
   width: 80%;
@@ -1012,7 +1012,9 @@ certificate page
   background: rgb(0, 0, 0);
 }
 
-/* Responsive */
+/*----------------------------------------------------------
+Responsive
+ ------------------------------------------------------------*/
 @media (max-width: 884px) {
   .certificates-main {
     width: 90%;
