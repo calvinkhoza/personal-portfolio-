@@ -326,7 +326,11 @@
       <a href="assets/CAVIN_CV.pdf" download class="btn btn-primary">Download CV</a>
 
     </div>
-    <main class="certificates-main">
+    <main class="certificates-main" >
+
+      <section id="certificates" class="certificates-main ">
+        
+
       <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Certificates</h1>
      
       <div class="certificates-container">
@@ -426,9 +430,8 @@
                    <a href="https://coursera.org/share/6c8cf2eaf1f869793327ba04cf0abb82" class="btn">View Certificate</a>
                </div>
            </div>
-           
-       </div>
-       </div>
+        </div>
+      </div>
    </main>
 
     <!-- Contact Section -->
@@ -474,42 +477,36 @@
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+          <div class="col-lg-7"> 
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <label for="name-field" class="pb-2">Your Name</label>
+                        <input type="text" name="name" id="name-field" class="form-control" required>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label for="email-field" class="pb-2">Your Email</label>
+                        <input type="email" class="form-control" name="email" id="email-field" required>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <label for="subject-field" class="pb-2">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject-field" required>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <label for="message-field" class="pb-2">Message</label>
+                        <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                    </div>
+        
+                    <div class="col-md-12 text-center">
+                        <button type="submit">Send Message</button>
+                    </div>
                 </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
             </form>
-          </div>
+        </div>
+        
         </div>
 
       </div>

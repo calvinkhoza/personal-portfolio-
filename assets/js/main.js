@@ -300,3 +300,14 @@ document.getElementById('user-input').addEventListener('keypress', function(even
       sendMessage();
   }
 });
+
+ document.getElementById("contact-form").addEventListener("submit", function(event) {
+event.preventDefault(); // Prevents the form from actually submitting
+        
+            // Show the popup
+  alert("Your message has been sent successfully!");
+        
+            // Clear the form after submission
+  document.getElementById("contact-form").reset();
+});
+    
