@@ -1,4 +1,4 @@
-## Personal Portfolio
+ ## Personal Portfolio
 DEPLOYMENT LINK 
 
 https://calvinkhoza.github.io/personal-portfolio-/#hero
@@ -15,7 +15,7 @@ Hello! I'm Cavin Khoza, a passionate DevOps engineer. With a background in cloud
 
 # Skills
 Technical Skills:
- HTML, CSS, JavaScript, e
+ HTML, CSS, JavaScript, 
  Python, React, etc.
  SQL, Docker, Jenkins 
  AWS and Microsoft azure
@@ -26,6 +26,13 @@ Soft Skills:
  Teamwork
  Problem-Solving
  Time Management, 
+
+Acknowledgements 
+w3 schools 
+font icons 
+Bootstrap
+
+
 
 Contact
 Feel free to reach out to me if you'd like to collaborate or have any questions:
